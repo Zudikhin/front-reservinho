@@ -1,0 +1,50 @@
+.history {
+  & h3 {
+    font-family: "Manrope-Medium";
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6em;
+    text-transform: uppercase;
+    color: #7d2335;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    @media (min-width: 768px) {
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 140px;
+      margin-bottom: 65px;
+    }
+  }
+  &__content {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &-big {
+      font-family: "Manrope-Regular";
+      font-size: 18px;
+      line-height: 28px;
+      color: #3a111e;
+      @media (min-width: 768px) {
+        font-size: 24px;
+        line-height: 44px;
+        width: 100%;
+      }
+    }
+    &-small {
+      font-family: "Manrope-Regular";
+      font-size: 14px;
+      line-height: 22px;
+      color: #000000;
+      margin-top: 40px;
+      @media (min-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+        width: 45%;
+      }
+    }
+  }
+}
