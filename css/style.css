@@ -810,13 +810,49 @@ p {
 
 @media (min-width: 992px) {
   .tiles-layout {
+    grid-gap: 38px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tiles-layout {
+    grid-gap: 36px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tiles-layout {
     grid-gap: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tiles-layout {
+    grid-gap: 46px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .tiles-layout {
+    grid-gap: 48px;
   }
 }
 
 @media (min-width: 1800px) {
   .tiles-layout {
-    grid-gap: 50px;
+    grid-gap: 36px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .tiles-layout {
+    grid-gap: 38px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .tiles-layout {
+    grid-gap: 48px;
   }
 }
 

@@ -20,10 +20,28 @@
   grid-gap: 20px;
   grid-template-columns: repeat(12, 1fr);
   @media (min-width: 992px) {
+    grid-gap: 38px;
+  }
+  @media (min-width: 1200px) {
+    grid-gap: 36px;
+  }
+  @media (min-width: 1400px) {
     grid-gap: 40px;
   }
+  @media (min-width: 1600px) {
+    grid-gap: 46px;
+  }
+  @media (min-width: 1700px) {
+    grid-gap: 48px;
+  }
   @media (min-width: 1800px) {
-    grid-gap: 50px;
+    grid-gap: 36px;
+  }
+  @media (min-width: 1920px) {
+    grid-gap: 38px;
+  }
+  @media (min-width: 2560px) {
+    grid-gap: 48px;
   }
 }
 
