@@ -3,42 +3,36 @@
   top: 0;
   width: 100%;
   z-index: 9;
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  & .glass {
+    display: block;
     margin-top: 20px;
     @media (min-width: 992px) {
-      justify-content: flex-end;
+      display: none;
     }
-    & .glass {
-      display: block;
-      @media (min-width: 992px) {
-        display: none;
-      }
+  }
+  & .lang {
+    margin-top: 30px;
+    margin-left: auto;
+    background: #7d2335;
+    border-radius: 3px;
+    width: 55px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a {
+      font-family: "Manrope-Bold";
+      font-size: 12px;
+      line-height: 16px;
+      color: #ffffff;
     }
-    & .lang {
-      background: #7d2335;
-      border-radius: 3px;
-      width: 55px;
-      height: 28px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    @media (min-width: 992px) {
+      background: #551c27;
+      width: 58px;
+      height: 30px;
       & a {
-        font-family: "Manrope-Bold";
-        font-size: 12px;
-        line-height: 16px;
-        color: #ffffff;
-      }
-      @media (min-width: 992px) {
-        background: #551c27;
-        width: 58px;
-        height: 30px;
-        & a {
-          font-size: 14px;
-          line-height: 19px;
-        }
+        font-size: 14px;
+        line-height: 19px;
       }
     }
   }

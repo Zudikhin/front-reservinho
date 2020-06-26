@@ -1,27 +1,64 @@
-.copyright-mob {
+.copyright {
+  margin-top: 30px;
   margin-bottom: 20px;
-  @media (min-width: 768px) {
-    display: none;
-  }
-  & .copyright__content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    & .logo {
-      margin-top: 10px;
-    }
-  }
-}
-.copyright-desk {
-  display: none;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  @media (min-width: 768px) {
-    display: block;
+  @media (min-width: 992px) {
+    margin-top: 80px;
+    margin-bottom: 40px;
   }
   @media (min-width: 1200px) {
     margin-bottom: 0px;
     margin-top: 0px;
+  }
+  & .container-fluid {
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 100%;
+    }
+    @media (min-width: 1600px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  & .col-vector {
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+  & span {
+    font-family: "Manrope-Regular";
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+    display: block;
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 20px;
+      transform: translateY(0px);
+    }
+    @media (min-width: 1200px) {
+      margin-top: 75px;
+      text-align: center;
+    }
+  }
+  & .glass {
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 55px;
+    }
   }
   & .img {
     display: none;
@@ -29,19 +66,39 @@
       display: block;
     }
   }
-  & .copyright__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  & .copyright_made {
+    transform: translateY(-4px);
+    display: block;
+    @media (min-width: 768px) {
+      transform: translateY(0px);
+    }
     @media (min-width: 992px) {
-      justify-content: space-between;
-      max-width: 930px;
-      margin: 0 auto;
+      transform: translateY(0px);
     }
     @media (min-width: 1200px) {
-      max-width: 98%;
-      margin: 0 auto;
+      margin-left: 15px;
+    }
+  }
+  & .logo {
+    margin-top: 10px;
+    @media (min-width: 992px) {
+      margin-top: 12px;
+    }
+    @media (min-width: 1200px) {
+      transform: translateX(-60px);
+      margin-top: 68px;
+      & img {
+        width: 240px;
+      }
+    }
+    @media (min-width: 1600px) {
+      transform: translateX(-30px);
+      & img {
+        width: auto;
+      }
+    }
+    @media (min-width: 1800px) {
+      transform: translateX(0px);
     }
   }
 }

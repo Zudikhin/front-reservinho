@@ -17,48 +17,31 @@
       margin-bottom: 65px;
     }
   }
-  &__text-big {
+  &__big {
     font-family: "Manrope-Regular";
     font-size: 18px;
     line-height: 28px;
     color: #3a111e;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     @media (min-width: 768px) {
       margin-bottom: 0px;
       font-size: 24px;
       line-height: 44px;
     }
-  }
-  &__content {
-    & p {
-      font-family: "Manrope-Regular";
-      font-size: 14px;
-      line-height: 22px;
-      color: #000000;
-      margin-top: 20px;
-    }
-    @media (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      & p {
-        width: 45%;
-        font-size: 18px;
-        line-height: 26px;
-        margin-top: 26px;
-      }
-    }
     @media (min-width: 992px) {
-      margin-top: 30px;
-      & p {
-        margin-top: 30px;
-      }
+      margin-bottom: 20px;
     }
-    @media (min-width: 1200px) {
-      width: 892px;
-      & p {
-        width: 426px;
-      }
+  }
+  &__small {
+    font-family: "Manrope-Regular";
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 20px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 26px;
     }
   }
 }
