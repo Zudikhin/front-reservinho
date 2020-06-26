@@ -814,6 +814,12 @@ p {
   }
 }
 
+@media (min-width: 1800px) {
+  .tiles-layout {
+    grid-gap: 50px;
+  }
+}
+
 .tiles-item {
   font-size: 14px;
   font-weight: bold;
