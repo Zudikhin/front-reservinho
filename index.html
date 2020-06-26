@@ -188,20 +188,18 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="tiles-grid">
-              <div class="tiles-grid-sizer"></div>
-              <div class="tiles-gutter-sizer"></div>
-              <div class="tiles-grid-item tiles-grid-item--width1">
+            <div class="tiles-layout">
+              <div class="tiles-item tiles-item-1">
                 <a class="test-popup-link" href="img/services/one.jpg">
                   <img src="img/services/one.jpg" alt="" />
-                </a> 
+                </a>
               </div>
-              <div class="tiles-grid-item tiles-grid-item--width2">
+              <div class="tiles-item tiles-item-2">
                 <a class="test-popup-link" href="img/services/two.jpg">
                   <img src="img/services/two.jpg" alt="" />
                 </a>
               </div>
-              <div class="tiles-grid-item tiles-grid-item--width3">
+              <div class="tiles-item tiles-item-3">
                 <a class="test-popup-link" href="img/services/three.jpg">
                   <img src="img/services/three.jpg" alt="">
                 </a>
@@ -242,7 +240,7 @@
           </div>
 
           <div class="col-12 col-md-12 col-lg-4 col-xl-3">
-            <div class="item__content">
+            <div class="item__content item__content-port">
               <span>Staropetrovsky dr. 7, lt. A, 6</span>
               <span>125130, Moscow, Russia</span>
               <a href="tel:7495 589-78-84">t. 7 495 589-78-84</a>
@@ -252,7 +250,7 @@
           <div class="col-12 col-md-6 col-lg-4 offset-xl-1 col-xl-3">
             <h4>Portugal</h4>
             <div class="item">
-              <div class="item__content">
+              <div class="item__content item__content-port">
                 <span>Avenida dos Aliados 85/89</span>
                 <span>4000-066, Porto, Portugal</span>
                 <a href="tel:223321272">t. 22 332 1272</a>
@@ -323,42 +321,42 @@
         var firstRatioMob = 0.72;
         var secondRationMob = 1.2;
         var thirdRatioMob = 0.75;
-        var firstWidthMob = $(".tiles-grid-item--width1").width();
-        var secondWidthMob = $(".tiles-grid-item--width2").width();
-        var thirdWidthMob = $(".tiles-grid-item--width3").width();
-        $(".tiles-grid-item--width1").css("height", firstRatioMob * firstWidthMob);
-        $(".tiles-grid-item--width2").css("height", secondRationMob * secondWidthMob);
-        $(".tiles-grid-item--width3").css("height", thirdRatioMob * thirdWidthMob);
+        var firstWidthMob = $(".tiles-item-1").width();
+        var secondWidthMob = $(".tiles-item-1").width();
+        var thirdWidthMob = $(".tiles-item-3").width();
+        $(".tiles-item-1").css("height", firstRatioMob * firstWidthMob);
+        $(".tiles-item-2").css("height", secondRationMob * secondWidthMob);
+        $(".tiles-item-3").css("height", thirdRatioMob * thirdWidthMob);
       } else if ($(window).width() >= 992 && $(window).width() <= 1199) {
         var firstRatioMob1 = 0.677;
         var secondRationMob1 = 1.34;
         var thirdRatioMob1 = 0.75;
-        var firstWidthMob1 = $(".tiles-grid-item--width1").width();
-        var secondWidthMob1 = $(".tiles-grid-item--width2").width();
-        var thirdWidthMob1 = $(".tiles-grid-item--width3").width();
-        $(".tiles-grid-item--width1").css("height", firstRatioMob1 * firstWidthMob1);
-        $(".tiles-grid-item--width2").css("height", secondRationMob1 * secondWidthMob1);
-        $(".tiles-grid-item--width3").css("height", thirdRatioMob1 * thirdWidthMob1);
+        var firstWidthMob = $(".tiles-item-1").width();
+        var secondWidthMob = $(".tiles-item-1").width();
+        var thirdWidthMob = $(".tiles-item-3").width();
+        $(".tiles-item-1").css("height", firstRatioMob * firstWidthMob);
+        $(".tiles-item-2").css("height", secondRationMob * secondWidthMob);
+        $(".tiles-item-3").css("height", thirdRatioMob * thirdWidthMob);
       } else if ($(window).width() >= 1200 && $(window).width() < 1620) {
         var firstRatioMob1 = 0.66;
         var secondRationMob1 = 1.34;
         var thirdRatioMob1 = 0.75;
-        var firstWidthMob1 = $(".tiles-grid-item--width1").width();
-        var secondWidthMob1 = $(".tiles-grid-item--width2").width();
-        var thirdWidthMob1 = $(".tiles-grid-item--width3").width();
-        $(".tiles-grid-item--width1").css("height", firstRatioMob1 * firstWidthMob1);
-        $(".tiles-grid-item--width2").css("height", secondRationMob1 * secondWidthMob1);
-        $(".tiles-grid-item--width3").css("height", thirdRatioMob1 * thirdWidthMob1);
+        var firstWidthMob = $(".tiles-item-1").width();
+        var secondWidthMob = $(".tiles-item-1").width();
+        var thirdWidthMob = $(".tiles-item-3").width();
+        $(".tiles-item-1").css("height", firstRatioMob * firstWidthMob);
+        $(".tiles-item-2").css("height", secondRationMob * secondWidthMob);
+        $(".tiles-item-3").css("height", thirdRatioMob * thirdWidthMob);
       } else {
         var firstRatioMob1 = 0.655;
         var secondRationMob1 = 1.34;
         var thirdRatioMob1 = 0.75;
-        var firstWidthMob1 = $(".tiles-grid-item--width1").width();
-        var secondWidthMob1 = $(".tiles-grid-item--width2").width();
-        var thirdWidthMob1 = $(".tiles-grid-item--width3").width();
-        $(".tiles-grid-item--width1").css("height", firstRatioMob1 * firstWidthMob1);
-        $(".tiles-grid-item--width2").css("height", secondRationMob1 * secondWidthMob1);
-        $(".tiles-grid-item--width3").css("height", thirdRatioMob1 * thirdWidthMob1);
+        var firstWidthMob = $(".tiles-item-1").width();
+        var secondWidthMob = $(".tiles-item-1").width();
+        var thirdWidthMob = $(".tiles-item-3").width();
+        $(".tiles-item-1").css("height", firstRatioMob * firstWidthMob);
+        $(".tiles-item-2").css("height", secondRationMob * secondWidthMob);
+        $(".tiles-item-3").css("height", thirdRatioMob * thirdWidthMob);
       }
       
       

@@ -53,3 +53,8 @@
     }
   }
 }
+.item__content-port {
+  @media (min-width: 992px) {
+    width: 230px !important;
+  }
+}
