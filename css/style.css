@@ -635,6 +635,7 @@ p {
 .grid-item img {
   width: 100%;
   height: 100%;
+  opacity: 0;
 }
 
 .grid-item--width1 {
@@ -856,17 +857,10 @@ p {
   }
 }
 
-.tiles-item {
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #929796;
-  border-radius: 5px;
-}
-
 .tiles-item img {
   width: 100%;
   height: 100%;
+  opacity: 0;
 }
 
 .tiles-item-1 {

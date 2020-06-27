@@ -46,14 +46,11 @@
 }
 
 .tiles-item {
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #929796;
-  border-radius: 5px;
   & img {
     width: 100%;
     height: 100%;
+    opacity: 0;
+    //object-fit: contain;
   }
 }
 
